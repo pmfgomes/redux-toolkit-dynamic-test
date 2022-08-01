@@ -1,0 +1,35 @@
+{
+  "name": "redux-toolkit-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@redux-eggs/core": "^2.2.0",
+    "@redux-eggs/redux-toolkit": "^2.2.0",
+    "@reduxjs/toolkit": "^1.8.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.30.1",
+    "immer": "^9.0.15",
+    "prettier": "^2.7.1",
+    "react-redux": "^8.0.2",
+    "uuid": "^8.3.2",
+    "vite": "^3.0.0"
+  }
+}
