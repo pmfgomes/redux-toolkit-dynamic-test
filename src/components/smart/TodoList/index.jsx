@@ -1,21 +1,24 @@
 import { useEffect } from "react";
 import store from "../../../stores/store";
 import TodoList from "../../lib/TodoList";
-import { smartTodoListEgg } from "./todoListEgg";
 import { useSelector, useDispatch } from "react-redux";
-import { addToList, removeFromList } from "./smartTodoListSlice";
+import smartTodoListReducer, {
+  addToList,
+  removeFromList,
+  smartTodoListReducerName,
+} from "./smartTodoListSlice";
 
 export default function SmartTodoList() {
   const list = useSelector((state) => {
-    return state?.smartTodoListReducer?.list;
+    return state?.todoList?.list;
   });
   const dispatch = useDispatch();
 
   useEffect(() => {
-    store.addEggs([smartTodoListEgg()]);
+    store.add(smartTodoListReducerName, smartTodoListReducer);
 
     return () => {
-      store.removeEggs([smartTodoListEgg()]);
+      store.remove(smartTodoListReducerName);
     };
   }, []);
 

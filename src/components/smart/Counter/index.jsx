@@ -1,21 +1,23 @@
 import { useEffect } from "react";
 import Counter from "../../lib/Counter";
 import { useSelector, useDispatch } from "react-redux";
-import { decrement, increment } from "./smartCounterSlice";
+import smartCounterReducer, {
+  smartCounterReducerName,
+  decrement,
+  increment,
+} from "./smartCounterSlice";
 import store from "../../../stores/store";
-import smartCounterEgg from "./smartCounterEgg";
 
 export default function SmartCounter() {
   const count = useSelector((state) => {
-    return state?.smartCounterReducer?.counter;
+    return state?.counterSlice?.counter;
   });
   const dispatch = useDispatch();
 
   useEffect(() => {
-    store.addEggs([smartCounterEgg()]);
-
+    store.add(smartCounterReducerName, smartCounterReducer);
     return () => {
-      store.removeEggs([smartCounterEgg()]);
+      store.remove(smartCounterReducerName);
     };
   }, []);
 

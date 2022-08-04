@@ -503,16 +503,6 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.5.tgz#db5a11bf66bdab39569719555b0f76e138d7bd64"
   integrity sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==
 
-"@redux-eggs/core@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@redux-eggs/core/-/core-2.2.0.tgz#74b98087db6e088af27501702a6761af8779f099"
-  integrity sha512-gaSA8vLgz3cugYOJs/095aUDfQ9bSL8SGL0CIcwPT0y3lcCOT/SAHAImaktGKVqUOjewe/f6DTZFiSWwYI0JuQ==
-
-"@redux-eggs/redux-toolkit@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@redux-eggs/redux-toolkit/-/redux-toolkit-2.2.0.tgz#9b1b58817d444fb220fdd645d63c4292034fe53a"
-  integrity sha512-J5a50n9ypjRBxp/J9UI784kezhr7TpsE9BjXWsHT0Wc9cVj7zvOGhnHQoJEuSN19NUt0BPeTYM/rjLQb2FeNmw==
-
 "@reduxjs/toolkit@^1.8.3":
   version "1.8.3"
   resolved "https://registry.yarnpkg.com/@reduxjs/toolkit/-/toolkit-1.8.3.tgz#9c6a9c497bde43a67618d37a4175a00ae12efeb2"

@@ -19,4 +19,6 @@ const smartCounterSlice = createSlice({
 
 export const { increment, decrement } = smartCounterSlice.actions;
 
+export const smartCounterReducerName = smartCounterSlice.name;
+
 export default smartCounterSlice.reducer;
