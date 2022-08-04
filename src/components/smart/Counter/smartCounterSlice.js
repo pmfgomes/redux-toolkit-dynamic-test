@@ -14,10 +14,11 @@ const smartCounterSlice = createSlice({
     decrement: (state) => {
       state.counter -= 1;
     },
+    cleanState: () => ({ ...initialState }),
   },
 });
 
-export const { increment, decrement } = smartCounterSlice.actions;
+export const { increment, decrement, cleanState } = smartCounterSlice.actions;
 
 export const smartCounterReducerName = smartCounterSlice.name;
 

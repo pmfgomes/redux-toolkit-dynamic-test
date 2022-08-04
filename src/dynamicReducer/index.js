@@ -23,9 +23,7 @@ export function buildStore({
     }
 
     reducer[key] = dynamicReducer;
-
     combinedReducer = combineReducers(reducer);
-
     store.replaceReducer(combinedReducer);
   };
 
@@ -33,13 +31,9 @@ export function buildStore({
     if (!key || !reducer[key]) {
       return;
     }
-    // Remove it from the reducer mapping
 
-    reducer[key] = reducer[key].getInitialState();
     delete reducer[key];
-
     combinedReducer = combineReducers(reducer);
-
     store.replaceReducer(combinedReducer);
   };
 

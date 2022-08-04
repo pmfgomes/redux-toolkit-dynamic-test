@@ -5,6 +5,7 @@ import smartCounterReducer, {
   smartCounterReducerName,
   decrement,
   increment,
+  cleanState,
 } from "./smartCounterSlice";
 import store from "../../../stores/store";
 
@@ -16,8 +17,9 @@ export default function SmartCounter() {
 
   useEffect(() => {
     store.add(smartCounterReducerName, smartCounterReducer);
+
     return () => {
-      store.remove(smartCounterReducerName);
+      dispatch(cleanState());
     };
   }, []);
 

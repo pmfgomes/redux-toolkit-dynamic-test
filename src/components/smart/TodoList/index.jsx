@@ -16,10 +16,6 @@ export default function SmartTodoList() {
 
   useEffect(() => {
     store.add(smartTodoListReducerName, smartTodoListReducer);
-
-    return () => {
-      store.remove(smartTodoListReducerName);
-    };
   }, []);
 
   return (
